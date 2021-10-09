@@ -13,7 +13,7 @@ export default function Task({
           type="checkbox"
           defaultChecked={state === "TASK_ARCHIVED"}
           disabled={true}
-          readOnly={true}
+          name="checked"
         />
         <span className="checkbox-custom" onClick={() => onArchiveTask(id)} />
       </label>
@@ -29,7 +29,7 @@ export default function Task({
       <div className="actions" onClick={(event) => event.stopPropagation()}>
         {state !== "TASK_ARCHIVED" && (
           <a onClick={() => onPinTask(id)}>
-            <span className={`icon-start`} />
+            <span className={`icon-star`} />
           </a>
         )}
       </div>
