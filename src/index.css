@@ -354,7 +354,7 @@
    height: 0.85em;
    transform: translate3d(-50%, -50%, 0);
    background: transparent;
-   box-shadow: #2cc5d2 0 0 0 1px inset;
+   box-shadow: #fff 0 0 0 1px inset;
    content: "";
    display: block;
  }
@@ -860,7 +860,7 @@
    flex-wrap: wrap;
    height: 3rem;
    width: 100%;
-   background: white;
+   background: #1c3f53;
    transition: all ease-out 150ms;
  }
  .list-item .title {
@@ -872,6 +872,8 @@
  .list-item input[type="text"] {
    background: transparent;
    width: 100%;
+   color: white;
+   font-weight: bold;
  }
  .list-item input[type="text"]:focus {
    cursor: text;
